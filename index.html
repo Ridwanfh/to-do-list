@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development #1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>To do List</h1>
+    <div>
+      <input
+        id="tf-input"
+        class="textfield"
+        type="text"
+        placeholder="Masukkan tugas"
+      />
+      <button id="task-button" class="button" onclick="addTask()">
+        Add Task
+      </button>
+    </div>
+    <div>
+      <ul id="task-container">
+        <li id="task-1" class="list-item">
+          Task 1
+          <button onclick="editTask('task-1', 'Task 1')" class="edit-button">
+            Edit
+          </button>
+          <button onclick="deleteTask('task-1')" class="delete-button">
+            Delete
+          </button>
+        </li>
+        <li id="task-2" class="list-item">
+          Task 2
+          <button onclick="editTask('task-2', 'Task 2')" class="edit-button">
+            Edit
+          </button>
+          <button onclick="deleteTask('task-2')" class="delete-button">
+            Delete
+          </button>
+        </li>
+        <li id="task-3" class="list-item">
+          Task 3
+          <button onclick="editTask('task-3', 'Task 3')" class="edit-button">
+            Edit
+          </button>
+          <button onclick="deleteTask('task-3')" class="delete-button">
+            Delete
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
